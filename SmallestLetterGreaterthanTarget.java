@@ -11,12 +11,11 @@ public class SmallestLetterGreaterthanTarget {
         int s = 0;
         int e = letters.length-1;
         int m = 0;
-        if (target >= letters[e])
+        if (target >= letters[e]) //As the letters in the array are sorted, the last letter case is checked first
             return letters[s];
         while(s<=e){
             m = s+(e-s)/2;
-            // if(target == letters[m])
-            //    return m;
+            //BS the character just greater than target
             if(target >= letters[m])
                 s=m+1;
             else
