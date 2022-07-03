@@ -1,6 +1,6 @@
 package com.vivek;
 
-https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
+//https://leetcode.com/problems/search-in-rotated-sorted-array/submissions/
 
 public class SearchRotatedArray {
     public static void main(String[] args) {
@@ -16,6 +16,7 @@ public class SearchRotatedArray {
 
         if (target >= arr[0])
             res = BS(0,pivot-1,arr,target);
+
 
         res = BS(pivot+1, arr.length-1,arr,target );
 
